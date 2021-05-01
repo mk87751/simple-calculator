@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0 2/css/font-awesome.min.css"
+    />
+    <title>Caluclator</title>
+  </head>
+  <body>
+    <div class="calci-container">
+      <div class="display">
+        <input id="input" type="text" />
+      </div>
+      <div class="input-container">
+        <table class="input-table">
+          <tr>
+            <th>
+              <button value="AC" id="clr" onclick="allClearClickHandler()">
+                AC
+              </button>
+            </th>
+            <th>
+              <button value="+/-" id=""></button>
+            </th>
+            <th>
+              <button value="%" id=""></button>
+            </th>
+            <th>
+              <button
+                value="/"
+                id="divide"
+                onclick="signClickHandler(this.value)"
+              >
+                /
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <button
+                value="7"
+                id="block7"
+                onclick="numClickHandler(this.value)"
+              >
+                7
+              </button>
+            </th>
+            <th>
+              <button
+                value="8"
+                id="block8"
+                onclick="numClickHandler(this.value)"
+              >
+                8
+              </button>
+            </th>
+            <th>
+              <button
+                value="9"
+                id="block9"
+                onclick="numClickHandler(this.value)"
+              >
+                9
+              </button>
+            </th>
+            <th>
+              <button
+                value="x"
+                id="multiply"
+                onclick="signClickHandler(this.value)"
+              >
+                x
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <button
+                value="4"
+                id="block4"
+                onclick="numClickHandler(this.value)"
+              >
+                4
+              </button>
+            </th>
+            <th>
+              <button
+                value="5"
+                id="block5"
+                onclick="numClickHandler(this.value)"
+              >
+                5
+              </button>
+            </th>
+            <th>
+              <button
+                value="6"
+                id="block6"
+                onclick="numClickHandler(this.value)"
+              >
+                6
+              </button>
+            </th>
+            <th>
+              <button
+                value="-"
+                id="minus"
+                onclick="signClickHandler(this.value)"
+              >
+                -
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <button
+                value="1"
+                id="block1"
+                onclick="numClickHandler(this.value)"
+              >
+                1
+              </button>
+            </th>
+            <th>
+              <button
+                value="2"
+                id="block2"
+                onclick="numClickHandler(this.value)"
+              >
+                2
+              </button>
+            </th>
+            <th>
+              <button
+                value="3"
+                id="block3"
+                onclick="numClickHandler(this.value)"
+              >
+                3
+              </button>
+            </th>
+            <th>
+              <button
+                value="+"
+                id="plus"
+                onclick="signClickHandler(this.value)"
+              >
+                +
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <button value="clear"></button>
+            </th>
+            <th>
+              <button
+                value="0"
+                id="block0"
+                onclick="numClickHandler(this.value)"
+              >
+                0
+              </button>
+            </th>
+            <th>
+              <button value="." id="dot" onclick="dotClickHandler()">.</button>
+            </th>
+            <th>
+              <button value="=" id="ans" onclick="ansClickHandler()">=</button>
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
